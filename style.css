@@ -108,7 +108,8 @@ h3 {
     scale: 0.7;
     margin: 0 auto;
     position: relative;
-    margin-bottom: 80px;
+    margin-top: 60px;
+    margin-bottom: 10px;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -116,6 +117,32 @@ h3 {
 
 #islas path {
     fill: #2A5C0B;
+}
+
+.nombresH div {
+    left: 50%;
+    translate: -50%;
+    position: absolute;
+    margin-top: 40px;;
+    text-align: center;
+    display: none;
+}
+
+.nombresH h4 {
+    font-family: "Averia Serif Libre", serif;
+    font-weight: 800;
+    font-size: 36pt;
+    line-height: 0.1;
+    color: #EA2A15;
+}
+
+.nombresH p {
+    font-family: "Everett-regular";
+    font-size: 14pt;
+    line-height: .1;
+    color: #EA2A15;
+    font-weight: 200;
+    translate: 0px -20px;
 }
 
 .hoverin {
@@ -130,6 +157,8 @@ h3 {
     align-items: center;
     justify-content: space-around;
     margin-bottom: 150px;
+    margin-top: 0;
+    padding-top: 0;
 }
 
 .cajaflora {
@@ -162,7 +191,7 @@ h3 {
 
 
 #flores:hover .cajaflora:not(:hover) {
-    opacity: 0.6;
+    opacity: 0.3;
 }
 
 #topButton {
@@ -511,11 +540,11 @@ video {
 }
 
 footer {
-padding-top: 50px;
+    padding-top: 50px;
     height: 15vh;
     background-image:
         linear-gradient(120deg, #808F12, transparent, #EA2A15),
-        linear-gradient(to top, #2A5C0B,#3b7e12, #f3a67a);
+        linear-gradient(to top, #2A5C0B, #3b7e12, #f3a67a);
     font-family: "Everett-regular";
     font-size: 16pt;
     color: antiquewhite;
@@ -534,11 +563,10 @@ padding-top: 50px;
     padding: auto;
 }
 
-#redesSociales div{
+#redesSociales div {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
     gap: 20px;
 }
-

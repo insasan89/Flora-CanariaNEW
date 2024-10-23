@@ -6,6 +6,13 @@ let gomera = document.getElementById("gomera");
 let hierro = document.getElementById("hierro");
 let palma = document.getElementById("palma");
 
+let nameTaji = document.getElementById("nameTaji");
+let nameViolet = document.getElementById("nameViolet");
+let nameHelecho = document.getElementById("nameHelecho");
+let nameTilo = document.getElementById("nameTilo");
+let nameCardon = document.getElementById("nameCardon");
+let nameDrago = document.getElementById("nameDrago");
+
 let tajinaste = document.getElementById("tajinaste");
 let cardon = document.getElementById("cardon");
 let drago = document.getElementById("drago");
@@ -20,17 +27,21 @@ let modalBack = document.createElement('div');
 function hoverIslas() {
     tajinaste.addEventListener("mouseenter", () => {
         granCanaria.classList.add("hoverin");
+        nameTaji.style.display = "block";
     })
     tajinaste.addEventListener("mouseleave", () => {
         granCanaria.classList.remove("hoverin");
+        nameTaji.style.display = "none";
     })
 
 
     violeta.addEventListener("mouseenter", () => {
         tenerife.classList.add("hoverin");
+        nameViolet.style.display = "block";
     })
     violeta.addEventListener("mouseleave", () => {
         tenerife.classList.remove("hoverin");
+        nameViolet.style.display = "none";
     })
 
     helecho.addEventListener("mouseenter", () => {
@@ -42,6 +53,8 @@ function hoverIslas() {
         fuerteventura.classList.add("hoverin");
         lanzarote.classList.add("hoverin");
 
+        nameHelecho.style.display = "block";
+
     })
     helecho.addEventListener("mouseleave", () => {
         granCanaria.classList.remove("hoverin");
@@ -51,6 +64,8 @@ function hoverIslas() {
         palma.classList.remove("hoverin");
         fuerteventura.classList.remove("hoverin");
         lanzarote.classList.remove("hoverin");
+
+        nameHelecho.style.display = "none";
     })
 
     tilo.addEventListener("mouseenter", () => {
@@ -59,6 +74,7 @@ function hoverIslas() {
         gomera.classList.add("hoverin");
         hierro.classList.add("hoverin");
         palma.classList.add("hoverin");
+        nameTilo.style.display = "block";
     })
     tilo.addEventListener("mouseleave", () => {
         granCanaria.classList.remove("hoverin");
@@ -66,6 +82,7 @@ function hoverIslas() {
         gomera.classList.remove("hoverin");
         hierro.classList.remove("hoverin");
         palma.classList.remove("hoverin");
+        nameTilo.style.display = "none";
     })
 
     cardon.addEventListener("mouseenter", () => {
@@ -75,6 +92,7 @@ function hoverIslas() {
         hierro.classList.add("hoverin");
         palma.classList.add("hoverin");
         fuerteventura.classList.add("hoverin");
+        nameCardon.style.display = "block";
 
     })
     cardon.addEventListener("mouseleave", () => {
@@ -84,6 +102,7 @@ function hoverIslas() {
         hierro.classList.remove("hoverin");
         palma.classList.remove("hoverin");
         fuerteventura.classList.remove("hoverin");
+        nameCardon.style.display = "none";
     })
 
 
@@ -94,6 +113,7 @@ function hoverIslas() {
         hierro.classList.add("hoverin");
         palma.classList.add("hoverin");
 
+        nameDrago.style.display = "block";
     })
     drago.addEventListener("mouseleave", () => {
         granCanaria.classList.remove("hoverin");
@@ -101,6 +121,7 @@ function hoverIslas() {
         gomera.classList.remove("hoverin");
         hierro.classList.remove("hoverin");
         palma.classList.remove("hoverin");
+        nameDrago.style.display = "none";
     })
 }
 
